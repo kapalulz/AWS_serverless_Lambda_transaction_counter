@@ -8,7 +8,7 @@ Description: This project is a Serverless Transaction Analyzer that provides ins
 
 **API Endpoints:**
 
-1. Httml: [Link](https://518julmqj9.execute-api.us-east-1.amazonaws.com/default/create_file_s3)
+1. Html: [Link](https://518julmqj9.execute-api.us-east-1.amazonaws.com/default/create_file_s3)
 2. Transactions Functions: [Link](https://0mmcz2p1dh.execute-api.us-east-1.amazonaws.com/default/count_transactions)
 
 This project allows users to input content, which is processed by the serverless backend powered by AWS Lambda. The transaction data in CSV format is stored in Amazon S3 and retrieved for processing. The application then displays transaction details and categories in a user-friendly manner through the provided API endpoints.
