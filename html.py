@@ -149,15 +149,15 @@ function createPieChart(data) {
             datasets: [{
                 data: Object.values(data),
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.8)',    // Red
-                    'rgba(54, 162, 235, 0.8)',    // Blue
-                    'rgba(255, 206, 86, 0.8)',    // Yellow
-                    'rgba(75, 192, 192, 0.8)',    // Turquoise
-                    'rgba(153, 102, 255, 0.8)',   // Purple
-                    'rgba(255, 0, 0, 0.8)',       // Red
-                    'rgba(0, 255, 0, 0.8)',       // Green
-                    'rgba(0, 0, 255, 0.8)',       // Blue
-                    'rgba(255, 165, 0, 0.8)'      // Orange
+                    'rgba(255, 99, 132, 0.8)',    // Red.
+                    'rgba(54, 162, 235, 0.8)',    // Blue.
+                    'rgba(255, 206, 86, 0.8)',    // Yellow.
+                    'rgba(75, 192, 192, 0.8)',    // Turquoise.
+                    'rgba(153, 102, 255, 0.8)',   // Purple.
+                    'rgba(255, 0, 0, 0.8)',       // Red.
+                    'rgba(0, 255, 0, 0.8)',       // Green.
+                    'rgba(0, 0, 255, 0.8)',       // Blue.
+                    'rgba(255, 165, 0, 0.8)'      // Orange.
                 ],
                 borderWidth: 1
             }]
