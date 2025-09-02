@@ -7,7 +7,9 @@ Description: This project is a Serverless Transaction Analyzer that provides ins
 
   
 
-<img src="https://cdn.discordapp.com/attachments/1044227371986853888/1412469849321377872/image.png?ex=68b8688e&is=68b7170e&hm=de3bc1506774d61295c08181c7c093d2e259fdfc25142c0acda3f408d4c75916&" alt="Screenshot 2" width="500">
+<img src="https://cdn.discordapp.com/attachments/1044227371986853888/1412469849321377872/image.png?ex=68b8688e&is=68b7170e&hm=de3bc1506774d61295c08181c7c093d2e259fdfc25142c0acda3f408d4c75916&" alt="Screenshot 2" width="800">
+
+
 - - - - - - -
 ## API Endpoints
 
