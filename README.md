@@ -1,21 +1,33 @@
-<div align="center">
+# Serverless Transaction Analyzer
 
-# Title: Serverless Transaction Analyzer
+A small AWS Lambda-based application that analyzes transaction data stored in Amazon S3 and presents category totals through a web interface.
 
-Description: This project is a Serverless Transaction Analyzer that provides insights into financial data. It includes a web interface where users can enter content, which triggers backend processes, and displays transaction statistics and a pie chart of transaction categories. Built using AWS Lambda, it offers a serverless and scalable solution.
+## Architecture
 
+- A web-facing Lambda function serves the interface.
+- Transaction content is stored in Amazon S3.
+- A Python Lambda function parses the data and calculates totals.
+- API endpoints connect the browser interface to the backend.
+- The UI presents transaction details and a category breakdown.
 
-  
+## Repository contents
 
-<img src="https://cdn.discordapp.com/attachments/1044227371986853888/1412469849321377872/image.png?ex=68b8688e&is=68b7170e&hm=de3bc1506774d61295c08181c7c093d2e259fdfc25142c0acda3f408d4c75916&" alt="Screenshot 2" width="800">
+- `html.py` — web response/interface function
+- `calculation.py` — transaction parsing and aggregation logic
 
+## Deployment considerations
 
-- - - - - - -
-## API Endpoints
+Before deploying your own copy:
 
-1. Html: [Link](https://518julmqj9.execute-api.us-east-1.amazonaws.com/default/create_file_s3)
-2. Transactions Functions: [Link](https://0mmcz2p1dh.execute-api.us-east-1.amazonaws.com/default/count_transactions)
+1. Create private S3 storage for uploaded transaction data.
+2. Give each Lambda function only the permissions it requires.
+3. Configure API authentication, request validation, and CORS.
+4. Store bucket names and other environment-specific values in configuration.
+5. Enable structured logs while avoiding sensitive transaction content.
+6. Add retention and deletion controls for uploaded files.
 
-This project allows users to input content, which is processed by the serverless backend powered by AWS Lambda. The transaction data in CSV format is stored in Amazon S3 and retrieved for processing. The application then displays transaction details and categories in a user-friendly manner through the provided API endpoints.
+## Privacy and security
 
-</div>
+Transaction data is sensitive. Do not use public buckets or unauthenticated write endpoints, and do not log raw financial records. Treat the included public endpoints as demonstration infrastructure that may be unavailable or unsuitable for real data.
+
+> This project is a serverless proof of concept, not financial or accounting software.
